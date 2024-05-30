@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcription</title>
+    <style>
+        /* Basic styling for the body to set fonts, remove margins and paddings, and set a full-height background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4D869C; /* Light blue background for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Use 100% of the viewport height for centering */
+        }
+        /* Container for content, centrally aligned with padding and shadow for depth */
+        .container {
+            width: 80%; /* Responsive width up to a maximum of 80% */
+            background-color: #fff; /* White background for content */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px #ccc; /* Subtle shadow for 3D effect */
+            text-align: justify; /* Justified text for better readability */
+        }
+        /* Styling for the header with a color and a bottom border */
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #666; /* Darker line for emphasis */
+        }
+        /* Paragraph styles for improved readability */
+        p {
+            font-size: 18px; /* Slightly larger font size for readability */
+            color: #555; /* Dark grey text color */
+        }
+        /* Styles for action links */
+        a {
+            display: inline-block;
+            margin-top: 20px; /* Space above links */
+            padding: 10px 20px; /* Padding for clickable area */
+            font-size: 16px; /* Readable font size */
+            background-color: #ff6200; /* Bright orange for visibility */
+            color: #ffffff; /* White text for contrast */
+            text-decoration: none; /* No underline to clean look */
+            border-radius: 5px; /* Rounded corners for aesthetic */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        /* Hover effect for links */
+        a:hover {
+            background-color: #fca44c; /* Lighter orange on hover for interactive feedback */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Transcription</h1>
+        <p>{{ transcription }}</p> <!-- Displaying the transcription dynamically from Flask -->
+        <a href="{{ url_for('show_summary', filename=filename) }}">Show Summary</a> <!-- Link to show summary of the transcription -->
+        <a href="/">Upload Another Video</a> <!-- Link to return to the homepage for another upload -->
+    </div>
+</body>
+</html>

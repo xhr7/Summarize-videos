@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <style>
+        /* Basic styling for the entire body */
+        body {
+            font-family: Arial, sans-serif; /* Consistent font settings */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full screen height */
+            background-color: #4D869C; /* Pleasant background color */
+            color: #333;
+        }
+        /* Styling for the box containing the summary */
+        .summary-box {
+            background-color: #ffffff; /* White background for contrast */
+            border: 2px solid #ccc; /* Subtle border */
+            padding: 30px; /* Spacing inside the box */
+            border-radius: 10px; /* Rounded corners */
+            width: 50%; /* Responsiveness: occupies 50% of the viewport width */
+            max-width: 800px; /* Maximum width */
+            min-width: 300px; /* Minimum width */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+            text-align: justify; /* Justified text for better readability */
+            position: relative; /* Relative positioning for potential pseudo-elements */
+            margin-bottom: 20px; /* Space below the box */
+        }
+        /* Styling for the title inside the summary box */
+        h1 {
+            margin-bottom: 10px; /* Space below the title */
+        }
+        /* Custom horizontal line to separate title and content */
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #333; /* Dark line for contrast */
+            width: 100%; /* Line stretches across the box */
+            margin-top: 0;
+            margin-bottom: 20px; /* Space below the line */
+        }
+        /* Link styling for uploading another video */
+        .upload-link {
+            display: block; /* Block display for easier interaction */
+            margin-top: 20px; /* Space above the link */
+            padding: 12px 25px; /* Padding for better clickability */
+            background-color: #ff6200; /* Bright, eye-catching color */
+            color: white; /* White text for contrast */
+            text-decoration: none; /* No underline */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Readable font size */
+            text-align: center; /* Centered text */
+            width: fit-content; /* Width according to content */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+        /* Hover effect for the upload link */
+        .upload-link:hover {
+            background-color: #fca44c; /* Lighter orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="summary-box">
+        <h1>Summary</h1>
+        <hr> <!-- Horizontal line for visual separation -->
+        <p>{{ summary }}</p> <!-- Dynamically insert summary content -->
+    </div>
+    <a href="{{ url_for('upload_video') }}" class="upload-link">Upload another video</a> <!-- Link to upload another video -->
+</body>
+</html>

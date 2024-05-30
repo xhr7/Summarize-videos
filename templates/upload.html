@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Video</title>
+    <style>
+        /* Styles for the body to create a centered and clean layout */
+        body {
+            font-family: 'Arial', sans-serif; /* Consistent font for better readability */
+            background-color: #4D869C; /* Subtle background color */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+        }
+        /* Styling for the form element to ensure it's visually appealing and responsive */
+        form {
+            width: 40%; /* Responsive width to adapt to different screen sizes */
+            max-width: 600px; /* Maximum width to avoid overly large forms on big screens */
+            min-width: 300px; /* Minimum width to maintain usability on small devices */
+            padding: 20px; /* Padding to prevent content from touching the edges */
+            background-color: #ffffff; /* White background for maximum contrast */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+            border-radius: 8px; /* Rounded corners for a softer look */
+            text-align: center; /* Center align the text and contents of the form */
+        }
+        /* Header styles for clear identification of the form's purpose */
+        h1 {
+            color: #ff6200; /* Vibrant orange for visibility and branding */
+            margin-bottom: 20px; /* Space below the header */
+        }
+        /* Paragraph styling for instructions or information */
+        p {
+            color: #666666; /* Dark gray for readability */
+            margin-bottom: 20px; /* Space below paragraph for separation */
+        }
+        /* Input styling for file type, ensuring it's easy to use and accessible */
+        input[type="file"] {
+            padding: 10px; /* Padding for easier interaction */
+            border: 2px solid #7AB2B2; /* Styled border with a distinct color */
+            border-radius: 4px; /* Rounded corners */
+            margin-bottom: 20px; /* Space below the input */
+            width: 90%; /* Relative width for responsiveness */
+        }
+        /* Styling for the submit button to make it prominent and clickable */
+        input[type="submit"] {
+            background-color: #ff6200; /* Bright background color for the button */
+            color: white; /* Contrast text color for readability */
+            border: none; /* No border for a cleaner look */
+            padding: 10px 20px; /* Adequate padding for clickable area */
+            font-size: 16px; /* Legible font size */
+            border-radius: 4px; /* Rounded corners for aesthetics */
+            cursor: pointer; /* Cursor indicates clickable */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        /* Hover effect for the submit button to provide interactive feedback */
+        input[type="submit"]:hover {
+            background-color: #fca44c; /* Lighter orange on hover */
+        }
+    </style>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <h1>Welcome to Video Summarizer!</h1>
+        <p>Bring clarity to your video content with our advanced summarization tool. Upload your video and receive a concise, interactive summary that captures all the essential elements. Perfect for enhancing understanding, saving time, and sharing focused insights.</p>
+        <input type="file" name="file" accept="video/*">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
