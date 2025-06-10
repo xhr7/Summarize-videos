@@ -80,8 +80,34 @@ You can test the system without retraining by downloading the pretrained model:
 - Python 3.10+
 - pip installed libraries: `transformers`, `torch`, `flask`, `ffmpeg-python`, `noisereduce`, `openai-whisper`
 
-### Installation
+###  Step 1:Installation
 
 ```bash
 git clone https://github.com/xhr7/Summarize-videos.git
 cd Summarize-videos
+```
+
+
+
+### Step 2: Download the Pretrained Model
+
+Before running the app, download the pretrained model from the following link:  
+📦 [Google Drive – Trained Model](https://drive.google.com/drive/folders/1xhbMRrMkBtpHghe_RDds3_INHdYszT9V?usp=sharing)
+
+> Place the downloaded files in the main project directory, next to the Flask code and templates.
+
+---
+
+### Step 3: Install Dependencies
+
+Make sure you have Python 3.10+, then install all required libraries:
+
+```bash
+pip install -r requirements.txt
+
+```
+
+Step 4: Run the App 
+```bash
+python app.py
+```
