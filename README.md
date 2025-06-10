@@ -52,13 +52,7 @@ This project introduces a web application that uses advanced AI models to:
 The model shows a basic ability to identify key ideas but struggles with generating fluent and complete summaries — which is expected at this stage. Due to the use of a lightweight model (T5-small) and limited fine-tuning, results often lack coherence, miss important details, and produce partial outputs. These challenges are common when working with real-world audio transcriptions and can be improved by using stronger models, more diverse training data, and better linguistic handling.
 
 
-## Model Download
 
-You can test the system without retraining by downloading the pretrained model:
-
-📦 [Download from Google Drive](https://drive.google.com/drive/folders/1xhbMRrMkBtpHghe_RDds3_INHdYszT9V?usp=sharing)
-
-> Place the files in the same directory as the Flask code and templates.
 
 
 
