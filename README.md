@@ -102,7 +102,7 @@ pip install -r requirements.txt
 
 ```
 
-Step 4: Run the App 
+### Step 4: Run the App 
 ```bash
 python app.py
 ```
