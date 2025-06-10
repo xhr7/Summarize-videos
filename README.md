@@ -11,7 +11,7 @@ This project introduces a web application that uses advanced AI models to:
 - Summarize the transcribed content
 - Present the result in a clean, simple interface
 
-![App Screenshot](https://github.com/xhr7/Summarize-videos/assets/102740867/1f2b7ea4-50f9-4df4-8031-4d2083e1e8ef)
+<img src="https://github.com/xhr7/Summarize-videos/assets/102740867/1f2b7ea4-50f9-4df4-8031-4d2083e1e8ef" width="500"/>
 
 
 
