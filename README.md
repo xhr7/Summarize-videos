@@ -58,14 +58,15 @@ The model shows a basic ability to identify key ideas but struggles with generat
 
 ## System Stack
 
-- Python
-- Hugging Face Transformers
-- T5-small model
-- OpenAI Whisper
-- noisereduce
-- Flask
-- HTML / CSS
 
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white)
+![Transformers](https://img.shields.io/badge/HuggingFace_Transformers-FFBF00?style=for-the-badge&logo=huggingface&logoColor=black)
+![T5 Model](https://img.shields.io/badge/T5--small_Model-21A366?style=for-the-badge)
+![Whisper](https://img.shields.io/badge/OpenAI_Whisper-000000?style=for-the-badge&logo=openai&logoColor=white)
+![Noisereduce](https://img.shields.io/badge/NoiseReduce-44A833?style=for-the-badge)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ## Getting Started
 
